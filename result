@@ -1,0 +1,14 @@
+
+Run cpplint
+
+Done processing ./intern.c
+Done processing ./task1.c
+Done processing ./task2.c
+Done processing ./task3.c
+Done processing ./task4.c
+Done processing ./task5.c
+Done processing ./tema2.c
+Done processing ./utils.h
+
+Run clang-tidy
+

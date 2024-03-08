@@ -1,0 +1,32 @@
+Task 1
+
+Se itereaza prin numarul de avioane, 
+se extrage valoare de la pointerul idx si se incrementeaza cu marimea tipului de date
+Se afiseaza datele despre avioane
+
+Task 2
+
+Varibilele Avion(1,2)_(N,S,E,W) reprezinta forma fiecarui avion in toate pozitiile posibile.
+Se initiaza matricea la '.'
+In dependenta de tipul si directia avionului, stiind ca capul avionului se afla la jumatate de latura, 
+scade distanta necesara ca sa aduca capul avionului la originea planului.
+Din forma avionului se copiaza doar '*' pentru a nu se suprapune peste alte posibile avioane
+Afisam matricea cu avioanele desenate
+
+Task 3
+
+Functia qsort din <stdlib.h> primeste patru parametrii, primii trei descriu vectorul ce-l vrem sortat, al treilea descrie regula dupa care sa se sorteze
+regula este reprezentata de o functie ce are antet prestabilit: int (f *)(const void *a, const void *b)
+Parametrii sunt de tip void* ca sa poate fi cast-uiti de la si la orice tip de date.
+Dupa dereferentiere, se compara fiecare criteriu in ordinea prioritatii, daca sunt egale, se trece la urmatorul.
+Apoi se printeaza datele despre avioane in ordinea sortata
+
+Task 4
+
+Functiile is_inside_rect verifica daca un punct se afla intr un dreptunghi
+Prima primeste dreptunghiul ca o pereche de puncte respectiv punctul de sus stanga si punctul de jos dreapta
+A doua primeste .... punctul de sus stanga si lungimea laturilor.
+Se itereaza prin avioane si se numara cate obstacole sunt in calea lui
+Avionul se imparte in 2 dreptunghiuri, primul acopera de la aripi la sfarsitul matricii,
+al doilea spatiul dintre aripi si coada(care e mai mic)
+Dupa ce se itereaza prin obstacole, daca nu intampina niciun obstacol, se incrementeaza variabila nr_avioane_trecute
